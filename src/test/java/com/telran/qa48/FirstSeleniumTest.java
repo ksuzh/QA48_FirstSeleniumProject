@@ -22,8 +22,10 @@ public class FirstSeleniumTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // driver.get("https://www.tel-ran.com"); // without history
-        driver.navigate().to("https://www.tel-ran.com"); // with history
+        driver.navigate().to("https://www.tel-ran.com");// with history
+
         driver.navigate().to("https://www.google.com");
+        
         driver.navigate().back();
         driver.navigate().forward();
         driver.navigate().refresh();
